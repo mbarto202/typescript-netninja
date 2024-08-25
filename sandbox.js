@@ -5,16 +5,43 @@
 // inputs.forEach((input) => {
 //   console.log(input);
 // });
-var character = "mario";
-var age = 30;
-var isBlackBelt = false;
-//character = 20;
-character = "luigi";
-//age = 'yoshi';
-age = 40;
-//isBlackBelt = 'yes';
-isBlackBelt = true;
-var circ = function (diameter) {
-    return diameter * Math.PI;
+//-----------------------------------------
+// let character = "mario";
+// let age = 30;
+// let isBlackBelt = false;
+// //character = 20;
+// character = "luigi";
+// //age = 'yoshi';
+// age = 40;
+// //isBlackBelt = 'yes';
+// isBlackBelt = true;
+// const circ = (diameter: number) => {
+//   return diameter * Math.PI;
+// };
+// console.log(circ(7.5));
+//---------------------------------------------
+// arrays---
+var names = ["luigi", "mario", "yoshi"];
+names.push("toad");
+//names.push(3);
+//names[0] = 3;
+var nums = [1, 2, 3];
+//nums.push('shuan');
+var mixed = ["ken", 1, "mike", 2, 3];
+mixed.push("rachel");
+mixed.push(4);
+mixed[0] = 4;
+// objects---
+var ninja = {
+  name: "michael",
+  belt: "black",
+  age: 25,
 };
-console.log(circ(7.5));
+ninja.age = 26;
+//ninja.name = 2;
+ninja = {
+  name: "rachel",
+  belt: "white",
+  age: 22,
+  //skill: []
+};
