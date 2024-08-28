@@ -92,4 +92,18 @@
 // ninja = {name: 25, age: 'toad'};
 // console.log(ninja);
 //----------------------------------------------------
-console.log('test');
+// Functions---------
+// let greet: Function;
+// greet = () => {
+//     console.log('Hello, again')
+// }
+// const add = (a: number, b: number, c: number | string = 10): void => {
+//     console.log(a + b);
+//     console.log(c);
+// }
+// add(5,10, 20)
+// const minus = (a: number, b: number) => {
+//     return a - b;
+// }
+// let result = minus(2,1);
+// console.log(result);
