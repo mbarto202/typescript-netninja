@@ -120,22 +120,22 @@
 //     console.log(`${user.name} says hello`);
 // }
 //----------------------------------------------------
-//ex1
-let greet;
-greet = (name, greeting) => {
-    console.log(`${name} says ${greeting}`);
-};
-//ex2
-let calc;
-calc = (numOne, numTwo, action) => {
-    if (action === 'add') {
-        return numOne + numTwo;
-    }
-    else {
-        return numOne - numTwo;
-    }
-};
-let logDetails;
-logDetails = (ninja) => {
-    console.log(`${ninja.name} is ${ninja.age} years old`);
-};
+// //ex1
+// let greet: (a: string, b: string) => void;
+// greet = (name: string, greeting: string) => {
+//     console.log(`${name} says ${greeting}`);
+// }
+// //ex2
+// let calc: (a: number, b: number, c: string) => number;
+// calc = (numOne: number, numTwo: number, action: string) => {
+//     if (action === 'add'){
+//         return numOne+ numTwo;
+//     } else {
+//         return numOne - numTwo;
+//     }
+// }
+// let logDetails: (obj: {name: string, age: number}) => void;
+// type person = {name: string, age: number};
+// logDetails = (ninja: person) => {
+//     console.log(`${ninja.name} is ${ninja.age} years old`);
+// }
