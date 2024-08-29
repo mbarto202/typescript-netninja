@@ -1,3 +1,13 @@
+import { Invoice } from './classes/Invoice.js';
+import { Payment } from './classes/Payment.js';
+let docOne;
+let docTwo;
+docOne = new Invoice('yoshi', 'web work', 250);
+docTwo = new Payment('mario', 'plumbing work', 200);
+let docs = [];
+docs.push(docOne);
+docs.push(docTwo);
+console.log(docs);
 const me = {
     name: 'Shaun',
     age: 30,
@@ -13,7 +23,6 @@ const greetPerson = (person) => {
     console.log('hello', person.name);
 };
 greetPerson(me);
-import { Invoice } from './classes/Invoice.js';
 const invOne = new Invoice('Michael', 'gym', 25);
 const invTwo = new Invoice('Rachel', 'gym', 20);
 let invoices = [];
@@ -31,5 +40,12 @@ const details = document.querySelector('#details');
 const amount = document.querySelector('#amount');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+    let doc;
+    if (type.value === 'invoice') {
+        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    else {
+        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    console.log(doc);
 });
